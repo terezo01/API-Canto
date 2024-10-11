@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#bot-options{
+    list-style-type: none;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    width: 200px;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: opacity 0.5s ease, height 0.5s ease;
+}
+
+
+#bot-options li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+#bot-options li:hover {
+    background-color: #ddd;
+}
+
+#bot-options.show {
+    /* Quando a classe 'show' é adicionada, a altura e a opacidade mudam */
+    opacity: 1;
+    height: auto; /* altura automática para mostrar todo o conteúdo */
+}
+
+#bot-img img{
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+}
+
+.bot-chat{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

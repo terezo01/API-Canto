@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bot-chat">
+        <ul id="bot-options"> 
+            <li>Opção 1</li>
+            <li>Opção 2</li>
+            <li>Opção 3</li>
+        </ul>
+        <div id="bot-img">
+            <img src="img/images.jfif" alt="">
+        </div>
+    </div>
+    <script>
+        document.getElementById('bot-img').addEventListener('click', function() {
+            var botOptions = document.getElementById('bot-options');
+
+            // Alterna a classe 'show' para aplicar a animação
+            if (botOptions.classList.contains('show')) {
+                botOptions.classList.remove('show');
+            } else {
+                botOptions.classList.add('show');
+            }
+        });
+
+</script>
+</body>
+</html>
